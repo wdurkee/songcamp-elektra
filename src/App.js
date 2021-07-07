@@ -1,28 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Typewriter from 'typewriter-effect';
 import Countdown from 'react-countdown';
 
-
-
 function App() {
-  
   const pad = (num, size) => {
     num = num.toString();
     while (num.length < size) num = "0" + num;
     return num;
-  } 
+  }
 
   const renderer = ({days, hours, minutes, seconds, total}) => {
     let daysString = pad(days, 2)
     let hoursString = pad(hours, 2)
     let minutesString = pad(minutes, 2)
     let secondsString = pad(seconds, 2)
+    
     let msString = pad(total, 3)
     msString = msString.substr(msString.length - 3);
-
     return <div className="countdown-text">{daysString}:{hoursString}:{minutesString}:{secondsString}:{msString}</div>;
+  }
+
+  const getUTCNow = () => {
+    var now = new Date();
+    return (new Date(now.getTime() + now.getTimezoneOffset() * 60000))
   }
 
   return (
@@ -37,25 +38,21 @@ function App() {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter.pauseFor(500)
-                    .typeString('A portal is opening to another world.')
-                    .pauseFor(50)
-                    .typeString('<br />')
-                    .pauseFor(1500)
-                    .typeString('A world called <i>Elektra</i>.')
+                    .typeString('A portal is opening.')
                     .start()
                 }}
                 options={{
                   delay: 35
                 }}
               />
-              
+
               <Countdown 
-                date={new Date('July 12, 2021 13:00:00')}
+                date={new Date('July 12, 2021 20:00:00')}
                 intervalDelay={0}
                 precision={3}
-                renderer={renderer}  
+                renderer={renderer}
+                now={getUTCNow}
               />
-              
 
           </div>
         </div>
