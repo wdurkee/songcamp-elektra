@@ -136,11 +136,8 @@ body {
   font-size: 12px;
   position: absolute;
   bottom: 10px;
-  
   text-align: center;
   animation: fadeIn forwards 20s;
-  
-
 }
 
 .powerBottom a {
