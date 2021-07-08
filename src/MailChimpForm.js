@@ -6,8 +6,7 @@ function MailChimpForm() {
         <div>
         <Mailchimp
         className="chimpForms"
-                action={process.env.MAILCHIMP_ACTION_KEY}
-                
+                action="https://band.us6.list-manage.com/subscribe/post?u=f4851db0998383af4e573916e&id=9562a75ed0"
                 fields={[
                     {
                         name: 'EMAIL',
