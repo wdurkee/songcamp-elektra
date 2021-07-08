@@ -50,6 +50,7 @@ body {
 }
 
 .sub-content {
+  
   text-align: center;
   font-size: calc(14px + 0.6vw);
   font-weight: 500;
@@ -133,6 +134,10 @@ body {
 
 .powerBottom {
   font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  animation: fadeIn forwards 20s;
 }
 
 .powerBottom a {
