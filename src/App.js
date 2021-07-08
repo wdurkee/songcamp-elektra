@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 import Typewriter from 'typewriter-effect';
 import Countdown from 'react-countdown';
-
+import MailChimpForm from './MailChimpForm';
+import ElektraSatellite from './ElektraSatellite';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         Your browser does not support the video tag.
       </video>
       <div className='content'>
-          <div className='sub-content' >
+          <div className='sub-content'>
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter.pauseFor(500)
@@ -53,10 +54,11 @@ function App() {
                 renderer={renderer}  
               />
               
-
+              <MailChimpForm />
+              <ElektraSatellite className="logo" />
+              </div>
+            </div>
           </div>
-        </div>
-    </div>
   );
 }
 
