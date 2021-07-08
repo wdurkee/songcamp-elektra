@@ -112,9 +112,9 @@ body {
     color: white;
     font-size: 16px;
     background-color: transparent;
-    border: none;
-    border-radius: none;
-    border-bottom: 1px solid white;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: white;
     width: 70vw;
     max-width: 420px;
     padding: 5px;
