@@ -20,7 +20,7 @@ function App() {
     let minutesString = pad(minutes, 2)
     let secondsString = pad(seconds, 2)
     let msString = pad(total, 3)
-    
+
     msString = msString.substr(msString.length - 3);
     return <div className="countdown-text">{daysString}:{hoursString}:{minutesString}:{secondsString}:{msString}</div>;
   }
@@ -59,7 +59,9 @@ function App() {
           />
           
           <MailChimpForm />
-          <ElektraSatellite />
+          <div className="logo">
+            <ElektraSatellite />
+          </div>
         </div>
       </div>
     </div>
