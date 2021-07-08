@@ -10,7 +10,7 @@ function MailChimpForm() {
                 fields={[
                     {
                         name: 'EMAIL',
-                        placeholder: 'my email...',
+                        placeholder: 'email...',
                         type: 'email',
                         required: true
                     }

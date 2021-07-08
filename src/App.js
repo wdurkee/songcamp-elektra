@@ -19,8 +19,8 @@ function App() {
     let hoursString = pad(hours, 2)
     let minutesString = pad(minutes, 2)
     let secondsString = pad(seconds, 2)
-    
     let msString = pad(total, 3)
+    
     msString = msString.substr(msString.length - 3);
     return <div className="countdown-text">{daysString}:{hoursString}:{minutesString}:{secondsString}:{msString}</div>;
   }
@@ -38,34 +38,31 @@ function App() {
         Your browser does not support the video tag.
       </video>
       <div className='content'>
-          <div className='sub-content'>
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter.pauseFor(500)
-                    .typeString('A portal is opening.')
-                    .start()
-                }}
-                options={{
-                  delay: 35
-                }}
-              />
+        <div className='sub-content'>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.pauseFor(500)
+                .typeString('A portal is opening.')
+                .start()
+            }}
+            options={{
+              delay: 35
+            }}
+          />
 
-              <Countdown 
-                date={new Date('July 12, 2021 20:00:00')}
-                intervalDelay={0}
-                precision={3}
-                renderer={renderer}
-                now={getUTCNow}
-              />
-              
-              <MailChimpForm />
-              <ElektraSatellite className="logo" />
-              </div>
-            </div>
-
-
-
-          </div>
+          <Countdown 
+            date={new Date('July 12, 2021 20:00:00')}
+            intervalDelay={0}
+            precision={3}
+            renderer={renderer}
+            now={getUTCNow}
+          />
+          
+          <MailChimpForm />
+          <ElektraSatellite />
+        </div>
+      </div>
+    </div>
   );
 }
 
