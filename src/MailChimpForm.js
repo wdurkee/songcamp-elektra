@@ -7,6 +7,7 @@ function MailChimpForm() {
         <Mailchimp
         className="chimpForms"
                 action={process.env.MAILCHIMP_ACTION_KEY}
+                
                 fields={[
                     {
                         name: 'EMAIL',

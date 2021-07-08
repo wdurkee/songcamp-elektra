@@ -115,7 +115,12 @@ body {
     border: none;
     border-radius: none;
     border-bottom: 2px solid white;
-    width: 60vw;
+    width: 70vw;
+    max-width: 420px;
     padding: 5px;
     animation: fadeIn forwards 10s;
+}
+
+.logo {
+  animation: fadeIn forwards 20s;
 }
