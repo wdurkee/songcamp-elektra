@@ -130,3 +130,11 @@ body {
 .logo {
   animation: fadeIn forwards 20s;
 }
+
+.powerBottom {
+  font-size: 12px;
+}
+
+.powerBottom a {
+  color: white;
+}

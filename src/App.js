@@ -61,6 +61,7 @@ function App() {
           <MailChimpForm />
           <div className="logo">
             <ElektraSatellite />
+            <div className="powerBottom">Powered by <a href="https://twitter.com/songcamp_">Songcamp</a></div>
           </div>
         </div>
       </div>
