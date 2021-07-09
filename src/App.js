@@ -57,10 +57,12 @@ function App() {
             renderer={renderer}
             now={getUTCNow}
           />
-          
           <MailChimpForm />
+        
           <div className="logo">
-            <ElektraSatellite />
+            <a href="https://songcamp.mirror.xyz/RXLPdJU0zJpmGNQ3M-UueO7RO6t2P6NKe4CPDqoCZNM" target="_blank" rel="noreferrer">
+              <ElektraSatellite />
+            </a>
           </div>
         </div>
 

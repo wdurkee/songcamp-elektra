@@ -1,10 +1,13 @@
 import Mailchimp from 'react-mailchimp-form'
+
 import "./App.css"
 
 function MailChimpForm() {
+    
+
     return (
         <div>
-        <Mailchimp
+       <Mailchimp 
         className="chimpForms"
                 action="https://band.us6.list-manage.com/subscribe/post?u=f4851db0998383af4e573916e&id=9562a75ed0"
                 fields={[
@@ -18,14 +21,14 @@ function MailChimpForm() {
                 messages = {
                     {
                         sending: "SENDING...",
-                        success: "SUCCESS",
+                        success: "INSTRUCTIONS LANDING SOON",
                         error: "ERROR",
                         empty: "ENTER EMAIL",
                         duplicate: "ALREADY ON THE LIST",
                         button: "ENTER"
                     }
                 }
-                />
+        />
         </div>
     )
 }
