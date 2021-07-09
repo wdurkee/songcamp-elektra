@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
 html {
   overflow: hidden;
   height: 100%;
 }
+
 body {
   font-family: 'IBM Plex Mono';
   background-color: black;
   overflow: auto;
   height: 100%;
 }
+
 .App {
   text-align: center;
   overflow: hidden;
@@ -55,12 +58,14 @@ body {
   font-size: calc(14px + 0.6vw);
   font-weight: 500;
 }
+
 .sub-content h1 {
   color: #ffff;
   font-size: calc(8px + 3vw);
   margin: 0px;
   padding: 0px;
 }
+
 .sub-content p {
   color: #eee;
   font-size: 1rem;

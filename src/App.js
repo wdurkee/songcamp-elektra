@@ -37,35 +37,34 @@ function App() {
         {/* <source src="landscan.webm" type="video/webm" /> */}
         Your browser does not support the video tag.
       </video>
-      <div className='content'>
-        <div className='sub-content'>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.pauseFor(500)
-                .typeString('A portal is opening.')
-                .start()
-            }}
-            options={{
-              delay: 35
-            }}
-          />
+        <div className='content'>
+          <div className='sub-content'>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.pauseFor(500)
+                  .typeString('A portal is opening.')
+                  .start()
+              }}
+              options={{
+                delay: 35
+              }}
+            />
 
-          <Countdown 
-            date={new Date('July 12, 2021 20:00:00')}
-            intervalDelay={0}
-            precision={3}
-            renderer={renderer}
-            now={getUTCNow}
-          />
-          
-          <MailChimpForm />
-          <div className="logo">
-            <ElektraSatellite />
+            <Countdown 
+              date={new Date('July 12, 2021 20:00:00')}
+              intervalDelay={0}
+              precision={3}
+              renderer={renderer}
+              now={getUTCNow}
+            />
+            <MailChimpForm />
+            <div className="logo">
+              <a href="https://songcamp.mirror.xyz/RXLPdJU0zJpmGNQ3M-UueO7RO6t2P6NKe4CPDqoCZNM" target="_blank" rel="noreferrer">
+                <ElektraSatellite />
+              </a>
+            </div>
           </div>
-        </div>
-
         <div className="powerBottom">Powered by <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">Songcamp</a></div>
-      
       </div>
     </div>
   );
