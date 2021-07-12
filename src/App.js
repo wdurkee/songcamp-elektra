@@ -50,7 +50,7 @@ function App() {
               {/* <MailChimpForm /> */}  
           <div className="powerBottom">
             <div className="logo">
-              <a href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer">
+              <a href="https://songcamp.mirror.xyz/mkb-m9GWUCLByETAvCigJ0JIpz4XH8bwNDBtUJBPeFc" target="_blank" rel="noreferrer">
                 <ElektraSatellite />
               </a>
             </div>
