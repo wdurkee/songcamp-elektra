@@ -135,10 +135,6 @@ body {
   opacity: 1; 
 }
 
-.logo {
-  animation: fadeIn forwards 20s;
-}
-
 .powerBottom {
   font-size: 12px;
   position: absolute;

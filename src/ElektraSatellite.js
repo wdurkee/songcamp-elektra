@@ -4,7 +4,7 @@ import Logo from "./ELEKTRA.png"
 function ElektraSatellite() {
     return (
         <div>
-            <img src={Logo} alt="Elektra Logo" style={{ marginTop: "100px", maxWidth: "100px", height: "auto" }}/>
+            <img src={Logo} alt="Elektra Logo" style={{ marginTop: "40px", maxWidth: "40px", height: "auto" }}/>
         </div>
     )
 }
