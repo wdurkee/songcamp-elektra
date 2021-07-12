@@ -39,7 +39,7 @@ function App() {
         <div className='content'>
           <div className='sub-content'>
             <div className='button-container'>
-              <a className='portal-button' href='https://songcamp.mirror.xyz/mkb-m9GWUCLByETAvCigJ0JIpz4XH8bwNDBtUJBPeFc' target="_blank" rel="noreferrer">
+              <a className='portal-button' href='https://songcamp.mirror.xyz/' target="_blank" rel="noreferrer">
                 GET PORTAL TICKET
               </a>
               <a className='portal-button' href='https://discord.gg/v6hj82yeaE' target="_blank" rel="noreferrer">
