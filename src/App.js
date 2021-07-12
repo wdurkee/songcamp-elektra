@@ -42,7 +42,7 @@ function App() {
               <a className='portal-button' href='https://songcamp.mirror.xyz/' target="_blank" rel="noreferrer">
                 GET PORTAL TICKET
               </a>
-              <a className='portal-button' href='https://discord.gg/tGCffPyRBs' target="_blank" rel="noreferrer">
+              <a className='portal-button' href='https://discord.gg/v6hj82yeaE' target="_blank" rel="noreferrer">
                 ENTER THE PORTAL
               </a>
             </div>
