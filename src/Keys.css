@@ -1,0 +1,31 @@
+.keys-button {
+    font-family: 'IBM Plex Mono';
+    color: white;
+    background-color: transparent;
+    border: 4px solid white;
+    font-size: 32px;
+    padding: 40px 20px;
+    margin: 15px 0px 10px 0px;
+    animation: fadeIn forwards 3s;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .psi {
+    color:#d4af37;
+    border-color: #d4af37;
+  }
+  .phi {
+    color: #f564fa;
+    border-color: #f564fa;
+  }
+
+  .keys-vid {
+    animation: fadeIn forwards 3s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  

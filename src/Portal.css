@@ -140,7 +140,7 @@ body {
   position: absolute;
   bottom: 10px;
   text-align: center;
-  animation: fadeIn forwards 20s;
+  animation: fadeIn forwards 15s;
 }
 
 .powerBottom a {
