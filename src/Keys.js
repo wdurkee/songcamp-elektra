@@ -11,13 +11,13 @@ function Keys() {
         <div className='content'>
             <div className='sub-content'>
                 <div className='button-container'>
-                <a className='keys-button' href='https://google.com' >
+                <a className='keys-button' href='https://www.mintgate.io/' >
                     CHI
                 </a>
-                <a className='keys-button psi' href='https://google.com' >
+                <a className='keys-button psi' href='https://www.mintgate.io/' >
                     PSI
                 </a>
-                <a className='keys-button phi' href='https://google.com' >
+                <a className='keys-button phi' href='https://www.mintgate.io/' >
                     PHI
                 </a>
                 </div>
