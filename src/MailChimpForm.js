@@ -21,7 +21,7 @@ function MailChimpForm() {
                 messages = {
                     {
                         sending: "SENDING...",
-                        success: "INSTRUCTIONS LANDING SOON",
+                        success: "INFO LANDING SOON",
                         error: "ERROR",
                         empty: "ENTER EMAIL",
                         duplicate: "ALREADY ON THE LIST",
