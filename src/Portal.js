@@ -4,8 +4,8 @@ import {
 } from "react-router-dom";
 
 import './Portal.css';
-
 import ElektraSatellite from './ElektraSatellite';
+import MailChimpForm from './MailChimpForm'
 
 function Portal() {
   return (
@@ -18,15 +18,12 @@ function Portal() {
         <div className='content'>
           <div className='sub-content'>
             <div className='button-container'>
-              <a className='portal-button' href='https://songcamp.mirror.xyz/mkb-m9GWUCLByETAvCigJ0JIpz4XH8bwNDBtUJBPeFc' target="_blank" rel="noreferrer">
-                GET PORTAL TICKET
-              </a>
               <a className='portal-button' href='https://discord.gg/v6hj82yeaE' target="_blank" rel="noreferrer">
                 ENTER THE PORTAL
               </a>
             </div>
             </div>
-              {/* <MailChimpForm /> */}  
+            <MailChimpForm />  
           <div className="powerBottom">
             <div className="logo">
               <Link to="/keys">
