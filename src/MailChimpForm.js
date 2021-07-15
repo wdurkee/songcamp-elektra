@@ -1,6 +1,6 @@
 import Mailchimp from 'react-mailchimp-form'
 
-import "./App.css"
+import "./Portal.css"
 
 function MailChimpForm() {
     

@@ -1,4 +1,4 @@
-import "./App.css"
+import "./Portal.css"
 import Logo from "./ELEKTRA.png"
 
 function ElektraSatellite() {
