@@ -25,7 +25,7 @@ function MailChimpForm() {
                         error: "ERROR",
                         empty: "ENTER EMAIL",
                         duplicate: "ALREADY ON THE LIST",
-                        button: "ENTER"
+                        button: "SUBMIT"
                     }
                 }
             />
