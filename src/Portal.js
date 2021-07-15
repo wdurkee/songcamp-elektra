@@ -26,9 +26,11 @@ function Portal() {
             <MailChimpForm />  
           <div className="powerBottom">
             <div className="logo">
-              <Link to="/keys">
+              {/* <Link to="/keys"> */}
+              <a href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer">
                 <ElektraSatellite />
-              </Link>
+              </a>
+              {/* </Link> */}
             </div>
               Powered by <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">Songcamp</a>
             </div>
