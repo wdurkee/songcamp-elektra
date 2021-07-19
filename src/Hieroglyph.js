@@ -11,13 +11,13 @@ function Hieroglyph() {
         <div className='content'>
             <div className='sub-content'>
                 <div className='button-container'>
-                <a className='keys-button' href='https://mgate.io/go/PVuttLU6RGXd' >
+                <a className='keys-button' href='https://mgate.io/go/1dXPmJi_ehKi' >
                     CHI
                 </a>
-                <a className='keys-button psi' href='https://mgate.io/go/_K3uesDpyH8W/' >
+                <a className='keys-button psi' href='https://mgate.io/go/YFqBmJPhs1MQ/' >
                     PSI
                 </a>
-                <a className='keys-button phi' href='https://mgate.io/go/ns9LRUI7Sn_n/' >
+                <a className='keys-button phi' href='https://mgate.io/go/WTeeBUI3BAS9/' >
                     PHI
                 </a>
                 </div>
