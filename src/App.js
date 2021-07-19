@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -9,6 +9,7 @@ import './Portal.css';
 
 import Portal from './Portal'
 import Keys from './Keys'
+import Hieroglyph from './Hieroglyph'
 
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
       <Switch>
           <Route path="/keys">
             <Keys />
+          </Route>
+          <Route path="/hieroglyph">
+            <Hieroglyph />
           </Route>
           <Route path="/">
             <Portal />

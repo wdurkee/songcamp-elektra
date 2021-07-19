@@ -32,7 +32,12 @@ function Portal() {
               {/* </a> */}
               </Link>
             </div>
-              Powered by <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">Songcamp</a>
+              Powered by 
+              <Link to="/hieroglyph">
+              {/* <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer"> */}
+                Songcamp
+              {/* </a> */}
+              </Link>
             </div>
         </div>
     </div>
