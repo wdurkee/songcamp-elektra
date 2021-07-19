@@ -42,7 +42,7 @@ function App() {
           <Route path="/keys">
             <Keys />
           </Route>
-          <Route path="/hieroglyph">
+          <Route path="/maps">
             <Hieroglyph />
           </Route>
           <Route path="/">
