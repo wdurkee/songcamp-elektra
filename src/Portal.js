@@ -1,7 +1,7 @@
 import React from 'react';
-// import {
-//   Link
-// } from "react-router-dom";
+import {
+  Link
+} from "react-router-dom";
 
 import './Portal.css';
 import ElektraSatellite from './ElektraSatellite';
@@ -26,13 +26,18 @@ function Portal() {
             <MailChimpForm />  
           <div className="powerBottom">
             <div className="logo">
-              {/* <Link to="/keys"> */}
-              <a href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer">
+              <Link to="/keys">
+              {/* <a href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer"> */}
                 <ElektraSatellite />
+              {/* </a> */}
+              </Link>
+            </div>
+              Powered by&nbsp;
+              {/* <Link to="/maps"> */}
+              <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">
+                Songcamp
               </a>
               {/* </Link> */}
-            </div>
-              Powered by <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">Songcamp</a>
             </div>
         </div>
     </div>
