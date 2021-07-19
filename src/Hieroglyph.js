@@ -5,7 +5,7 @@ function Hieroglyph() {
   return (
     <div className="container">
         <video  preload="yes" playsInline autoPlay loop muted className="video" >
-            <source src="https://i.imgur.com/IV5I2De.mp4" type="video/mp4" />
+            <source src="https://i.imgur.com/uJhNvRg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <div className='content'>

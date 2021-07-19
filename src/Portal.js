@@ -35,7 +35,7 @@ function Portal() {
               Powered by 
               <Link to="/hieroglyph">
               {/* <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer"> */}
-                Songcamp
+                 Songcamp
               {/* </a> */}
               </Link>
             </div>
