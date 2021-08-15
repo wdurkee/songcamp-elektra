@@ -14,7 +14,6 @@ function Portal() {
 
   const nftStyle = {
     styles: {
-      cardAuctionPricing: function noRefCheck() { },
       cardOuter: function noRefCheck() { }
     },
     theme: {
@@ -34,7 +33,10 @@ function Portal() {
         fontSize: '16px',
         fontWeight: 600,
         paddingBottom: '5px'
-      }
+      },
+      cardOuter: {
+        gridAutoFlow: "row"
+      },
     }
   };
 
@@ -55,7 +57,7 @@ function Portal() {
             <img src={nft} alt="NFT img" className="nft-visuals" />
             <MediaConfiguration
               style={nftStyle}>
-              <NFTPreview id="4372" />
+              <NFTPreview id="2212" />
             </MediaConfiguration>
             <a className='bid-button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
               Place Bid
@@ -96,15 +98,16 @@ function Portal() {
             Your browser does not support the video tag.
           </video>
         <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
-          <source src="https://i.imgur.com/kZMXhQt.mp4" type="video/mp4" />
-          {/* <source src="landscan.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
-        <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
           <source src="https://i.imgur.com/O6bhIOa.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
             Your browser does not support the video tag.
           </video>
+        <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
+          <source src="https://i.imgur.com/kZMXhQt.mp4" type="video/mp4" />
+          {/* <source src="landscan.webm" type="video/webm" /> */}
+            Your browser does not support the video tag.
+          </video>
+
       </div>
 
       <div className="story-content">

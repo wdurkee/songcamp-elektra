@@ -229,12 +229,12 @@ body {
 }
 
 .nft-card {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 450px;
+  height: 475px;
   font-size: 14px;
   animation: fadeIn forwards 3s;
 }
@@ -245,7 +245,15 @@ body {
 }
 
 .zora-textSubdued {
-  margin-right: 5px;
+  font-size: 15px !important;
+}
+
+.zora-cardAuctionPricing {
+  grid-auto-flow: row !important;
+}
+
+.zora-pricingAmount {
+  font-size: 15px !important;
 }
 
 .bid-button {
