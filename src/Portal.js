@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  Link
-} from "react-router-dom";
 
 import { NFTPreview, MediaConfiguration } from "@zoralabs/nft-components";
 import Navbar from 'react-bootstrap/Navbar';
