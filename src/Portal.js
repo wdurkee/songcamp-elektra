@@ -142,7 +142,7 @@ function Portal() {
         <p className="story-text">Songcamp Elektra is made up of 42 musicians, visual artists, developers and strategists. Together we are building “Elektra” — an interactive choose-your-own-adventure web3 game with music at its core.</p>
         <p className="story-text">To play the game, you need to secure a Portal Ticket NFT in the crowdfund below.</p>
         <p className="story-text">As this project evolves, the lines between creator and audience will blur. Game builders will play the game they are building; and game players will build the game they are playing. The $ELEKTRA token will come to establish the contribution graph of this project, and once the camp is finished — the ElektraDAO will be born.</p>
-        <p className="story-text" className="learn-more">Learn More: <span><a className="learn-more-link" href='https://songcamp.mirror.xyz/' target="_blank" rel="noreferrer">
+        <p className="story-text learn-more">Learn More: <span><a className="learn-more-link" href='https://songcamp.mirror.xyz/' target="_blank" rel="noreferrer">
           https://songcamp.mirror.xyz/
         </a>
         </span>
