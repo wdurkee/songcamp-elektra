@@ -39,18 +39,18 @@ function App() {
   return (
     <Router>
       <Switch>
-          <Route path="/keys">
-            <Keys />
-          </Route>
-          <Route path="/maps">
-            <Hieroglyph />
-          </Route>
-          <Route path="/">
-            <Portal />
-          </Route>
-        </Switch>
+        <Route path="/keys">
+          <Keys />
+        </Route>
+        <Route path="/maps">
+          <Hieroglyph />
+        </Route>
+        <Route path="/">
+          <Portal />
+        </Route>
+      </Switch>
     </Router>
-    );
-  }
+  );
+}
 
 export default App;
