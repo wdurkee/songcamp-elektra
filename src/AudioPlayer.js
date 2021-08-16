@@ -57,7 +57,7 @@ class AudioPlayer extends React.Component {
         return (
             <div className="nft-container">
                 <div className="nft-card">
-                    <img src={"https://i.imgur.com/ASU0uR4.png"} alt="NFT img" className="nft-visuals" />
+                    <img src={"https://i.imgur.com/VT9wr4Z.jpg"} alt="NFT img" className="nft-visuals" />
                     <MediaConfiguration
                         style={nftStyle}>
                         <NFTPreview id="2212" />
@@ -77,7 +77,7 @@ class AudioPlayer extends React.Component {
                     </div>
                 </div>
                 <div className="nft-card">
-                    <img src={"https://i.imgur.com/9JNt9Hh.png"} alt="NFT img" className="nft-visuals" />
+                    <img src={"https://i.imgur.com/45GqLmV.jpg"} alt="NFT img" className="nft-visuals" />
                     <MediaConfiguration
                         style={nftStyle} >
                         <NFTPreview id="2335" />
@@ -97,7 +97,7 @@ class AudioPlayer extends React.Component {
                     </div>
                 </div>
                 <div className="nft-card">
-                    <img src={"https://i.imgur.com/gNP8gaT.png"} alt="NFT img" className="nft-visuals" />
+                    <img src={"https://i.imgur.com/xLB0NQY.jpg"} alt="NFT img" className="nft-visuals" />
                     <MediaConfiguration
                         style={nftStyle}>
                         <NFTPreview id="1836" />
