@@ -28,7 +28,7 @@ function Portal() {
 
       <div className="capsule-container">
         <video preload="yes" muted autoPlay playsInline loop className="capsule-video" >
-          <source src="https://i.imgur.com/nPxtZm3.mp4" type="video/mp4" />
+          <source src="https://storageapi.fleek.co/wdurkee-team-bucket/cropped-capsule.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
           Your browser does not support the video tag.
         </video>
