@@ -15,12 +15,22 @@
     height: 600px;
     font-size: calc(11px + 0.4vw);
     animation: fadeIn forwards 7s;
+    
 }
 
 .nft-visuals {
     width: 275px;
     height: 275px;
+    box-shadow: 0 1px 2px rgba(255,255,255,0.15);
+    transition: all 0.3s ease-in-out;
 }
+
+/* Scale up the box */
+.nft-visuals:hover {
+    transform: scale(1.02, 1.02);
+}
+  
+
 
 .zora-textSubdued {
     font-size: 15px !important;
@@ -152,7 +162,7 @@
 
 .winning-address {
     font-size: calc(10px + 0.2vw);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* small screen nft collapse */

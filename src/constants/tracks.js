@@ -12,7 +12,7 @@ export const track1 = {
 export const track2 = {
     tokenId: 4318, // 4543 not kicked off nft
     audioSrc: 'https://ipfs.fleek.co/ipfs/bafybeicbnbkzehly7q267kna6fuw3r4y7i7kpdh3maghbn2b2lp6pxqoxa',
-    imageSrc: 'https://i.imgur.com/VT9wr4Z.jpg',
+    imageSrc: 'https://i.imgur.com/UmDq5t8.jpg',
     title: 'Crash Desire',
     artist: 'AME RA',
     artistUrl: 'http://beta.catalog.works/',

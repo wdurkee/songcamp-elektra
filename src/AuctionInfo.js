@@ -48,11 +48,11 @@ const AuctionInfo = ({
                     <p>
                         Current Bid: {formatAmount(auction.currentBid.amount)} ETH
                     </p>
-                    <p className="winning-address">
-                        {winningBidAddress}
-                    </p>
                     <p>
                         Time Remaining: {countdown}
+                    </p>
+                    <p className="winning-address">
+                        {winningBidAddress}
                     </p>
                 </div>
             }
