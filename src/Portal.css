@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
+@font-face {
+  font-family: 'DrukWideHeavy';
+  src: local('DrukWideHeavy'), url(./fonts/DrukWideHeavy.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'DrukHeavy';
+  src: local('DrukHeavy'), url(./fonts/DrukHeavy.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
 html {
   background-color: #141414;
   color: aliceblue;
@@ -256,9 +269,9 @@ body {
 .section-title {
   margin-right: auto;
   margin-left: auto;
-  font-size: calc(20px + 1.0vw);
+  font-size: calc(10px + 1.8vw);
   font-weight: bolder;
-  font-family: "IBM Plex Mono";
+  font-family: "DrukWideHeavy";
 }
 
 

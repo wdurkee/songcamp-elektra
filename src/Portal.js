@@ -41,7 +41,7 @@ function Portal() {
             here
           </a>
         </span>. </p>
-        <p className="story-text" >Collecting one of these 1/1 Catalog NFTs also includes:</p>
+        <p className="story-text" >Collecting one of these 1/1 NFTs also includes:</p>
         <ul>
           <li className="bullet">A gift of 1000 $ELEKTRA</li>
           <li className="bullet">One (1) invitation to Songcamp's Patron House -- a dedicated space for patrons of 1/1 Songcamp NFTs to receive deep + intimate access into the growing Songcamp community and activities.</li>
