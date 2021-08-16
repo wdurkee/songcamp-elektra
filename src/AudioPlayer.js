@@ -1,10 +1,7 @@
-import { useContext, useEffect, useState, useMemo } from 'react'
+import { useState, useMemo, useRef } from 'react'
 // import { NFTPreview, MediaConfiguration } from "@zoralabs/nft-components";
 import './Portal.css';
 import './AudioPlayer.css';
-
-
-
 import useSWR from 'swr'
 import { queryZoraSubgraph, GET_NFT_BY_ID } from './gql/services'
 import { getActiveAuction } from './gql/utils'
@@ -12,101 +9,177 @@ import { useAuctionCountdown } from './gql/useAuctionCountdown'
 
 import AuctionInfo from './AuctionInfo'
 
+import { track1, track2, track3 } from './constants/tracks'
+
 
 const nftFetcher = (query, zoraId) => queryZoraSubgraph(query, { zoraId })
 
 const AudioPlayer = () => {
     const [playing, setPlaying] = useState(0)
-    const {
-        data: zoraData,
-        error: fetchNftError,
-        mutate: refetchNft,
-    } = useSWR([GET_NFT_BY_ID, 664], nftFetcher, {
-        refreshInterval: 7000,
-    })
-    //4543 not kicked off nft
+    const [currentTrack, setCurrentTrack] = useState(null)
 
-    console.log("zora data: ", zoraData)
+    // HTML audio element refs
+    const track1Ref = useRef(null)
+    const track2Ref = useRef(null)
+    const track3Ref = useRef(null)
 
+    // *** FETCH NFT DATA *** 
+    const { data: zoraData1, error: fetchNftError1 } = useSWR(
+        [GET_NFT_BY_ID, track1.tokenId],
+        nftFetcher,
+        { refreshInterval: 7000 }
+    ) //4543 not kicked off nft
+    const { data: zoraData2, error: fetchNftError2 } = useSWR(
+        [GET_NFT_BY_ID, track2.tokenId],
+        nftFetcher,
+        { refreshInterval: 7000 }
+    ) //4543 not kicked off nft
+    const { data: zoraData3, error: fetchNftError3 } = useSWR(
+        [GET_NFT_BY_ID, track3.tokenId],
+        nftFetcher,
+        { refreshInterval: 7000 }
+    ) //4543 not kicked off nft
 
-    const nft = useMemo(() => zoraData?.media, [zoraData])
+    const nft1 = useMemo(() => zoraData1?.media, [zoraData1])
+    const nft2 = useMemo(() => zoraData2?.media, [zoraData2])
+    const nft3 = useMemo(() => zoraData3?.media, [zoraData3])
 
-    const auction = useMemo(() => getActiveAuction(nft), [nft])
+    const auction1 = useMemo(() => getActiveAuction(nft1), [nft1])
+    const auction2 = useMemo(() => getActiveAuction(nft2), [nft2])
+    const auction3 = useMemo(() => getActiveAuction(nft3), [nft3])
 
-    console.log(auction)
+    const playPauseIcon1 = useMemo(() => playing && currentTrack === track1 ? 'btn pause' : 'btn play', [currentTrack, playing, track1])
+    const playPauseIcon2 = useMemo(() => playing && currentTrack === track2 ? 'btn pause' : 'btn play', [currentTrack, playing, track2])
+    const playPauseIcon3 = useMemo(() => playing && currentTrack === track3 ? 'btn pause' : 'btn play', [currentTrack, playing, track3])
 
+    console.log({ playPauseIcon1, playPauseIcon2, playPauseIcon3 });
+    console.log({ playing });
 
     const pressPlay = (track) => {
-        if (playing === track) {
-            setPlaying(0);
+        if (currentTrack === track) { // toggle play/pause on current track
+            setPlaying(!playing)
+            togglePlaying()
+        } else if (!currentTrack) {
+            setCurrentTrack(track)
+            setPlaying(true)
+            const audio = getAudioRef(track).current
+            audio.play()
+        } else {
+            console.log("now playing: " + track.title);
+            const currentAudio = getAudioRef(currentTrack).current
+            currentAudio.pause()
+            setCurrentTrack(track)
+            const newAudio = getAudioRef(track).current
+            newAudio.play()
         }
-        else {
-            setPlaying(track);
-        }
+    }
+
+    const togglePlaying = () => {
+        const audio = getAudioRef(currentTrack).current
+        audio.paused ? audio.play() : audio.pause()
+    }
+
+    const getAudioRef = (track) => {
+        let audioRef
+
+        if (track === track1) audioRef = track1Ref
+        else if (track === track2) audioRef = track2Ref
+        else if (track === track3) audioRef = track3Ref
+
+        return audioRef
     }
 
 
     return (
         <div className="nft-container">
             <div className="nft-card">
-                <img src={"https://i.imgur.com/KkI87jw.jpg"} alt="NFT img" className="nft-visuals" />
-                <p>Title</p>
-                <p>Artist</p>
-                {auction && <AuctionInfo auction={auction} />}
+                <img src={track1.imageSrc} alt="NFT img" className="nft-visuals" />
+                <p>{track1.title}</p>
+                <p>{track1.artist}</p>
+                {auction1 && <AuctionInfo auction={auction1} />}
+
+                <audio
+                    crossOrigin="anonymous"
+                    src={track1.audioSrc}
+                    ref={track1Ref}
+                    onEnded={() => setPlaying(false)}
+                // onLoadStart={onLoadStart}
+                // onLoadedMetadata={onLoadedMetadata}
+                // onCanPlay={onCanPlay}
+                // onPlay={onPlay}
+                // onError={onError}
+                // onStalled={onStalled}
+                />
 
                 <div className="nft-bottom">
                     <div className="btn-container">
                         <div
-                            className={"btn " + (playing === 1 ? 'pause' : 'play')}
-                            onClick={() => pressPlay(1)}>
+                            className={playPauseIcon1}
+                            onClick={() => pressPlay(track1)}>
                             <span className="bar bar-1"></span>
                             <span className="bar bar-2"></span>
                             <span className="bar bar-3"></span>
                         </div>
                     </div>
-                    <a className='bid-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
+                    <a className='bid-button button' href={track1.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
-                        </a>
+                    </a>
                 </div>
             </div>
             <div className="nft-card">
-                <img src={"https://i.imgur.com/VT9wr4Z.jpg"} alt="NFT img" className="nft-visuals" />
-                <p>Title</p>
-                <p>Artist</p>
-                {auction && <AuctionInfo auction={auction} />}
+                <img src={track2.imageSrc} alt="NFT img" className="nft-visuals" />
+                <p>{track2.title}</p>
+                <p>{track2.artist}</p>
+                {auction2 && <AuctionInfo auction={auction2} />}
+
+                <audio
+                    crossOrigin="anonymous"
+                    src={track2.audioSrc}
+                    ref={track2Ref}
+                    onEnded={() => setPlaying(false)}
+                />
+
                 <div className="nft-bottom">
                     <div className="btn-container">
                         <div
-                            className={"btn " + (playing === 2 ? 'pause' : 'play')}
-                            onClick={() => pressPlay(2)}>
+                            className={playPauseIcon2}
+                            onClick={() => pressPlay(track2)}>
                             <span className="bar bar-1"></span>
                             <span className="bar bar-2"></span>
                             <span className="bar bar-3"></span>
                         </div>
                     </div>
-                    <a className='bid-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
+                    <a className='bid-button button' href={track2.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
-                        </a>
+                    </a>
                 </div>
             </div>
             <div className="nft-card">
-                <img src={"https://i.imgur.com/45GqLmV.jpg"} alt="NFT img" className="nft-visuals" />
-                <p>Title</p>
-                <p>Artist</p>
-                {auction && <AuctionInfo auction={auction} />}
+                <img src={track3.imageSrc} alt="NFT img" className="nft-visuals" />
+                <p>{track3.title}</p>
+                <p>{track3.artist}</p>
+                {auction3 && <AuctionInfo auction={auction3} />}
+
+                <audio
+                    crossOrigin="anonymous"
+                    src={track3.audioSrc}
+                    ref={track3Ref}
+                    onEnded={() => setPlaying(false)}
+                />
+
                 <div className="nft-bottom">
                     <div className="btn-container">
                         <div
-                            className={"btn " + (playing === 3 ? 'pause' : 'play')}
-                            onClick={() => pressPlay(3)}>
+                            className={playPauseIcon3}
+                            onClick={() => pressPlay(track3)}>
                             <span className="bar bar-1"></span>
                             <span className="bar bar-2"></span>
                             <span className="bar bar-3"></span>
                         </div>
                     </div>
-                    <a className='bid-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
+                    <a className='bid-button button' href={track3.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
-                        </a>
+                    </a>
                 </div>
             </div>
         </div >);
