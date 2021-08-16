@@ -19,7 +19,6 @@ const AuctionInfo = ({
 
     const finalBid = useMemo(() => auction.previousBids.find(bid => bid.bidType === "Final"), [auction.previousBids])
 
-    console.log(auction)
     const winningBidAmount = useMemo(() => {
         if (!auctionIsOver) { return null }
         if (auction.status === "Active" && auction.currentBid) return auction.currentBid.amount
