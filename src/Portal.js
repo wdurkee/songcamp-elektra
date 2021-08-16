@@ -36,9 +36,9 @@ function Portal() {
 
       <div className="story-content">
         <p className="story-text welcome-text" >Welcome to the Elektra Songs Auction!</p>
-        <p className="story-text">100% of the proceeds from these auctions will go to the artists who created these songs and artwork, as well as those who have contributed to the wider Elektra project. See detailed splits <span>
+        <p className="story-text">100% of the proceeds from these auctions will go to the artists who created these songs and artwork, as well as those who have contributed to the wider Elektra project.  <span>
           <a className="learn-more-link" href='https://songcamp.mirror.xyz/' target="_blank" rel="noreferrer">
-            here
+            See detailed splits here
           </a>
         </span>. </p>
         <p className="story-text" >Collecting one of these 1/1 NFTs also includes:</p>
