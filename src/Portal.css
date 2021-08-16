@@ -292,6 +292,12 @@ body {
   .story-text {
       width: 75vw;
   }
+  .party-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 25vw;
+    padding: 10px 10px;
+  }
 }
 
 
