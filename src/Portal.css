@@ -240,7 +240,8 @@ body {
 }
 
 .party-button {
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .button-container {
@@ -266,7 +267,18 @@ body {
   color: #333;
 }
 
-/* larger screen row of 3 */
+/* mobile */
+
+
+@media screen and (max-width: 900px) {
+  .bullet {
+    width: 40vw;
+  }
+  .story-text {
+      width: 65vw;
+  }
+}
+
 
 /*old stuff*/
 

@@ -28,7 +28,7 @@ function Portal() {
 
       <div className="capsule-container">
         <video preload="yes" muted autoPlay playsInline loop className="capsule-video" >
-          <source src="https://ipfs.fleek.co/ipfs/bafybeibjeowdroq3ox2bybs7g7mpe5hhvqqcndxkiticfxnxtc3qbmgwwu" type="video/mp4" />
+          <source src="https://streamable.com/l/qg70vd/mp4.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
           Your browser does not support the video tag.
         </video>
@@ -52,7 +52,7 @@ function Portal() {
       </div>
       <div className="section video-section" >
         <video preload="yes" muted autoPlay playsInline loop className="video" >
-          <source src="https://i.imgur.com/98kiH3b.mp4" type="video/mp4" />
+          <source src="https://streamable.com/l/hkuj3j/mp4.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
           Your browser does not support the video tag.
         </video>

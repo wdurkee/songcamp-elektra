@@ -18,12 +18,21 @@ const AuctionInfo = ({
     const showCurrentBid = useMemo(() => auction.status === "Active" && auction.currentBid && !auctionIsOver, [auction, auctionIsOver])
 
     const finalBid = useMemo(() => auction.previousBids.find(bid => bid.bidType === "Final"), [auction.previousBids])
+
     const winningBidAmount = useMemo(() => {
         if (auction.status === "Active" && auction.currentBid) return auction.currentBid.amount
         else return finalBid.amount
     },
-        [auction, auctionIsOver]
+        [auction, finalBid]
     )
+
+    const winningBidAddress = useMemo(() => {
+        if (auction.status === "Active" && auction.currentBid) return auction.currentBid.bidder.id
+        else return finalBid.bidder.id
+    },
+        [auction, finalBid]
+    )
+
 
     return (
         <div>
@@ -39,6 +48,9 @@ const AuctionInfo = ({
                     <p>
                         Current Bid: {formatAmount(auction.currentBid.amount)} ETH
                     </p>
+                    <p className="winning-address">
+                        {winningBidAddress}
+                    </p>
                     <p>
                         Time Remaining: {countdown}
                     </p>
@@ -48,6 +60,9 @@ const AuctionInfo = ({
                 && <div className="price-text">
                     <p>
                         Winning Bid: {formatAmount(winningBidAmount)} ETH
+                    </p>
+                    <p className="winning-address">
+                        {winningBidAddress}
                     </p>
                 </div>
             }
