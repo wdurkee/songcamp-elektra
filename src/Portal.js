@@ -28,6 +28,9 @@ function Portal() {
         height: '0px',
         width: '0px'
       },
+      cardItemInfo: {
+        display: 'none'
+      },
       titleFont: {
         color: '#fff',
         fontSize: '16px',
@@ -54,7 +57,7 @@ function Portal() {
         <h1 className="section-title">The Elektra Songs Auction</h1>
         <div className="nft-container">
           <div className="nft-card">
-            <img src={nft} alt="NFT img" className="nft-visuals" />
+            <img src={"https://i.imgur.com/ULJgVrC.png"} alt="NFT img" className="nft-visuals" />
             <MediaConfiguration
               style={nftStyle}>
               <NFTPreview id="2212" />
@@ -64,7 +67,7 @@ function Portal() {
             </a>
           </div>
           <div className="nft-card">
-            <img src={nft} alt="NFT img" className="nft-visuals" />
+            <img src={"https://i.imgur.com/9JNt9Hh.png"} alt="NFT img" className="nft-visuals" />
             <MediaConfiguration
               style={nftStyle} >
               <NFTPreview id="2335" />
@@ -74,7 +77,7 @@ function Portal() {
             </a>
           </div>
           <div className="nft-card">
-            <img src={nft} alt="NFT img" className="nft-visuals" />
+            <img src={"https://i.imgur.com/ntI7moY.jpg"} alt="NFT img" className="nft-visuals" />
             <MediaConfiguration
               style={nftStyle}>
               <NFTPreview id="1836" />
