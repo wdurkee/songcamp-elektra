@@ -165,7 +165,7 @@ const AudioPlayer = () => {
                     </a> */}
                 </div>
                 <a className='bid-button song-party-button button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
-                    🥳AmeParty
+                    🥳CrashCamp
                 </a>
             </div>
             <div className="nft-card">
