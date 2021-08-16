@@ -1,47 +1,12 @@
 import React from 'react';
-
-import { NFTPreview, MediaConfiguration } from "@zoralabs/nft-components";
 import Navbar from 'react-bootstrap/Navbar';
-
 import './Portal.css';
 import ElektraSatellite from './ElektraSatellite';
 import MailChimpForm from './MailChimpForm'
+import AudioPlayer from './AudioPlayer'
 
 
 function Portal() {
-
-  const nftStyle = {
-    styles: {
-      cardOuter: function noRefCheck() { }
-    },
-    theme: {
-      bodyFont: {
-        color: '#fff',
-        fontSize: '14px',
-        fontWeight: 300
-      },
-      borderStyle: '0',
-      lineSpacing: 35,
-      previewCard: {
-        height: '0px',
-        width: '0px'
-      },
-      cardItemInfo: {
-        display: 'none'
-      },
-      titleFont: {
-        color: '#fff',
-        fontSize: '16px',
-        fontWeight: 600,
-        paddingBottom: '5px'
-      },
-      cardOuter: {
-        gridAutoFlow: "row"
-      },
-    }
-  };
-
-
   return (
     <div className="App" >
       <Navbar className="navbar">
@@ -53,40 +18,9 @@ function Portal() {
       </Navbar>
       <div className="section auction" >
         <h1 className="section-title">The Elektra Songs Auction</h1>
-        <div className="nft-container">
-          <div className="nft-card">
-            <img src={"https://i.imgur.com/ULJgVrC.png"} alt="NFT img" className="nft-visuals" />
-            <MediaConfiguration
-              style={nftStyle}>
-              <NFTPreview id="2212" />
-            </MediaConfiguration>
-            <a className='bid-button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
-              Place Bid
-            </a>
-          </div>
-          <div className="nft-card">
-            <img src={"https://i.imgur.com/9JNt9Hh.png"} alt="NFT img" className="nft-visuals" />
-            <MediaConfiguration
-              style={nftStyle} >
-              <NFTPreview id="2335" />
-            </MediaConfiguration>
-            <a className='bid-button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
-              Place Bid
-            </a>
-          </div>
-          <div className="nft-card">
-            <img src={"https://i.imgur.com/ntI7moY.jpg"} alt="NFT img" className="nft-visuals" />
-            <MediaConfiguration
-              style={nftStyle}>
-              <NFTPreview id="1836" />
-            </MediaConfiguration>
-            <a className='bid-button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
-              Place Bid
-            </a>
-          </div>
-        </div>
+        <AudioPlayer />
         <div className='button-container'>
-          <a className='portal-button party-button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
+          <a className='portal-button party-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
             Join the Party 🥳
               </a>
         </div>

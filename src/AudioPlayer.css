@@ -1,0 +1,131 @@
+.nft-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 5vh 0px;
+}
+
+.nft-card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    font-size: 14px;
+    animation: fadeIn forwards 7s;
+}
+
+.nft-visuals {
+    width: 250px;
+    height: 250px;
+}
+
+.zora-textSubdued {
+    font-size: 15px !important;
+}
+
+.zora-cardAuctionPricing {
+    grid-auto-flow: row !important;
+    padding: 5px 15px !important;
+}
+
+.zora-pricingAmount {
+    font-size: 15px !important;
+}
+
+.bid-button {
+    font-family: "IBM Plex Mono";
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    width: 85px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nft-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+}
+
+
+.btn-container {
+    position: relative;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: aliceblue 3px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border 0.1s ease-in-out;
+}
+
+.btn:hover {
+    border: #333 3px solid;
+}
+
+.btn:hover .bar {
+    background-color: #333;
+}
+
+.btn .bar {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 3px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
+}
+
+.btn.pause .bar-1 {
+    transform: translateX(13.5px) translateY(0px) rotate(0deg);
+}
+
+.btn.pause .bar-2 {
+    transform: translateX(24px) translateY(0px) rotate(0deg);
+}
+
+.btn.play .bar-1 {
+    transform: translateX(20px) translateY(-5px) rotate(-55deg);
+}
+
+.btn.play .bar-2 {
+    transform: translateX(20px) translateY(5px) rotate(-125deg);
+}
+
+
+
+/* small screen nft collapse */
+
+@media screen and (max-width: 900px) {
+    .nft-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nft-card {
+        margin-bottom: 50px;
+    }
+}
