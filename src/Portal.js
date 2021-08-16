@@ -17,7 +17,7 @@ function Portal() {
         </Navbar.Brand>
       </Navbar>
       <div className="section auction" >
-        <h1 className="section-title">The Elektra Songs Auction</h1>
+        <img src="https://i.imgur.com/REab9mL.png" alt="The Elektra Songs Auction" className="title-image" />
         <AudioPlayer />
         <div className='button-container'>
           <a className='portal-button party-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">

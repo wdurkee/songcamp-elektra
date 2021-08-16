@@ -69,6 +69,7 @@ class AudioPlayer extends React.Component {
                                 onClick={() => this.pressPlay(1)}>
                                 <span className="bar bar-1"></span>
                                 <span className="bar bar-2"></span>
+                                <span className="bar bar-3"></span>
                             </div>
                         </div>
                         <a className='bid-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
@@ -97,7 +98,7 @@ class AudioPlayer extends React.Component {
                     </div>
                 </div>
                 <div className="nft-card">
-                    <img src={"https://i.imgur.com/xLB0NQY.jpg"} alt="NFT img" className="nft-visuals" />
+                    <img src={"https://i.imgur.com/KkI87jw.jpg"} alt="NFT img" className="nft-visuals" />
                     <MediaConfiguration
                         style={nftStyle}>
                         <NFTPreview id="1836" />

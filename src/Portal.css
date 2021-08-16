@@ -24,6 +24,9 @@ body {
   align-items: center;
 }
 
+.title-image {
+  width: 70vw;
+}
 
 .section {
   justify-content: space-between;
