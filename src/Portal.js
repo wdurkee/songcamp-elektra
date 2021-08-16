@@ -7,8 +7,6 @@ import './Portal.css';
 import ElektraSatellite from './ElektraSatellite';
 import MailChimpForm from './MailChimpForm'
 
-import nft from './test.gif'
-
 
 function Portal() {
 
