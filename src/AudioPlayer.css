@@ -52,7 +52,7 @@
     border: 1.5px solid white;
     font-size: 14px;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 8px;
     height: 42px;
     width: 85px;
     text-decoration: none;
@@ -150,14 +150,19 @@
     text-align: center;
     width: 100%;
     font-weight: 500;
+
 }
 .nft-title-text {
     font-size: calc(15px + 0.4vw);
     font-weight: 900;
+    color: aliceblue;
+    text-decoration: none;
 }
 .nft-artist-text {
     font-size: calc(12px + 0.4vw);
     font-weight: 700;
+    color: #a7d1d6;
+    text-decoration: none;
 }
 
 .winning-address {

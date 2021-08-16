@@ -19,16 +19,19 @@ const AuctionInfo = ({
 
     const finalBid = useMemo(() => auction.previousBids.find(bid => bid.bidType === "Final"), [auction.previousBids])
 
+    console.log(auction)
     const winningBidAmount = useMemo(() => {
+        if (!auctionIsOver) { return null }
         if (auction.status === "Active" && auction.currentBid) return auction.currentBid.amount
         else return finalBid.amount
     },
-        [auction, finalBid]
+        [auction, finalBid, auctionIsOver]
     )
 
     const winningBidAddress = useMemo(() => {
         if (auction.status === "Active" && auction.currentBid) return auction.currentBid.bidder.id
-        else return finalBid.bidder.id
+        else if (auctionIsOver) return finalBid.bidder.id
+        else return null
     },
         [auction, finalBid]
     )

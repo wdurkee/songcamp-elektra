@@ -5,8 +5,8 @@ export const track1 = {
     title: 'Outer Boroughs',
     artist: 'Finch 3s',
     artistUrl: 'http://beta.catalog.works/',
-    catalogUrl: '',
-    partyBidUrl: ''
+    catalogUrl: 'http://beta.catalog.works/',
+    partyBidUrl: 'https://www.partybid.app/'
 }
 
 export const track2 = {
@@ -16,17 +16,17 @@ export const track2 = {
     title: 'Crash Desire',
     artist: 'AME RA',
     artistUrl: 'http://beta.catalog.works/',
-    catalogUrl: '',
-    partyBidUrl: ''
+    catalogUrl: 'http://beta.catalog.works/',
+    partyBidUrl: 'https://www.partybid.app/'
 }
 
 export const track3 = {
-    tokenId: 4372,
+    tokenId: 4318,
     audioSrc: 'https://ipfs.fleek.co/ipfs/bafybeiaax2mz54fdfklbcdevv2mmch6pqzyljuggytb2rghpn4xd44t3p4',
     imageSrc: 'https://i.imgur.com/45GqLmV.jpg',
     title: "Don't Worry",
     artist: 'Water Signs',
     artistUrl: 'http://beta.catalog.works/',
-    catalogUrl: '',
-    partyBidUrl: ''
+    catalogUrl: 'http://beta.catalog.works/',
+    partyBidUrl: 'https://www.partybid.app/'
 }

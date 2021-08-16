@@ -21,7 +21,7 @@ function Portal() {
         <AudioPlayer />
         <div className='button-container'>
           <a className='portal-button party-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
-            Join the Party 🥳
+            Start A Party 🥳
           </a>
         </div>
       </div>
@@ -71,7 +71,7 @@ function Portal() {
         </div>
       </div>
       <div className="section about" >
-        <h1 className="section-title about-title">About Elektra</h1>
+        <h1 className="section-title about-title">Songcamp Elektra</h1>
         <p className="story-text">Songcamp Elektra is an 8-week songwriting and art creation camp made up of musicians, visual artists, developers and strategists. Together we have collectively created Elektra — an interactive story and world with music at its core.</p>
         <p className="story-text">In the world of Elektra, music is energy. Music is the fuel, electricity, and light of the world. Once healthy and thriving, Elektra has since turned desolate and barren. These 3 songs have been created to help save this dying planet, and bring her back to health.</p>
         <p className="story-text">After the camp closes, the project will <span style={{ fontStyle: "italic" }}>exit to its community</span> and evolve into the Elektra DAO.</p>

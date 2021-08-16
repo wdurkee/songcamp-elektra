@@ -98,9 +98,9 @@ const AudioPlayer = () => {
     return (
         <div className="nft-container">
             <div className="nft-card">
-                <img src={track1.imageSrc} alt="NFT img" className="nft-visuals" />
-                <p className="nft-title-text">{track1.title}</p>
-                <p className="nft-artist-text">{track1.artist}</p>
+                <a href={track1.catalogUrl} target="_blank" rel="noreferrer" > <img src={track1.imageSrc} alt="NFT img" className="nft-visuals" /> </a>
+                <a href={track1.catalogUrl} target="_blank" rel="noreferrer" className="nft-title-text"><p className="nft-title-text">{track1.title}</p></a>
+                <a href={track1.artistUrl} target="_blank" rel="noreferrer" className="nft-artist-text">{track1.artist}</a>
                 {auction1 && <AuctionInfo auction={auction1} />}
 
                 <audio
@@ -129,12 +129,16 @@ const AudioPlayer = () => {
                     <a className='bid-button button' href={track1.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
                     </a>
+                    {/* <a className='bid-button button' href={track1.partyBidUrl} target="_blank" rel="noreferrer">
+                        Party 🥳
+                    </a> */}
+
                 </div>
             </div>
             <div className="nft-card">
-                <img src={track2.imageSrc} alt="NFT img" className="nft-visuals" />
-                <p className="nft-title-text">{track2.title}</p>
-                <p className="nft-artist-text">{track2.artist}</p>
+                <a href={track2.catalogUrl} target="_blank" rel="noreferrer"> <img src={track2.imageSrc} alt="NFT img" className="nft-visuals" /> </a>
+                <a href={track2.catalogUrl} target="_blank" rel="noreferrer" className="nft-title-text"><p className="nft-title-text">{track2.title}</p></a>
+                <a href={track2.artistUrl} target="_blank" rel="noreferrer" className="nft-artist-text">{track2.artist}</a>
                 {auction2 && <AuctionInfo auction={auction2} />}
 
                 <audio
@@ -157,12 +161,15 @@ const AudioPlayer = () => {
                     <a className='bid-button button' href={track2.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
                     </a>
+                    {/* <a className='bid-button button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
+                        Party 🥳
+                    </a> */}
                 </div>
             </div>
             <div className="nft-card">
-                <img src={track3.imageSrc} alt="NFT img" className="nft-visuals" />
-                <p className="nft-title-text">{track3.title}</p>
-                <p className="nft-artist-text">{track3.artist}</p>
+                <a href={track3.catalogUrl} target="_blank" rel="noreferrer" > <img src={track3.imageSrc} alt="NFT img" className="nft-visuals" /> </a>
+                <a href={track3.catalogUrl} target="_blank" rel="noreferrer" className="nft-title-text"><p className="nft-title-text">{track3.title}</p></a>
+                <a href={track3.artistUrl} target="_blank" rel="noreferrer" className="nft-artist-text">{track3.artist}</a>
                 {auction3 && <AuctionInfo auction={auction3} />}
 
                 <audio
@@ -185,6 +192,9 @@ const AudioPlayer = () => {
                     <a className='bid-button button' href={track3.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
                     </a>
+                    {/* <a className='bid-button button' href={track3.partyBidUrl} target="_blank" rel="noreferrer">
+                        Party 🥳
+                    </a> */}
                 </div>
             </div>
         </div >);
