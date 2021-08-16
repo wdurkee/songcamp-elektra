@@ -6,7 +6,7 @@ export const track1 = {
     artist: 'Finch-3S',
     artistUrl: 'https://zora.co/finch3s',
     catalogUrl: 'https://zora.co/finch3s/4554',
-    partyBidUrl: 'https://www.partybid.app/'
+    partyBidUrl: 'https://www.partybid.app/party/0xa93cbb8658578C09E7aDA3f9d989C2E1B2026342'
 }
 
 export const track2 = {
