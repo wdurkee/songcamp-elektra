@@ -28,29 +28,18 @@ function Portal() {
 
       <div className="capsule-container">
         <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
-          <source src="https://i.imgur.com/YjI7NJw.mp4" type="video/mp4" />
+          <source src="https://i.imgur.com/nPxtZm3.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
             Your browser does not support the video tag.
           </video>
-        <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
-          <source src="https://i.imgur.com/O6bhIOa.mp4" type="video/mp4" />
-          {/* <source src="landscan.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
-        <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
-          <source src="https://i.imgur.com/kZMXhQt.mp4" type="video/mp4" />
-          {/* <source src="landscan.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
-
       </div>
 
       <div className="story-content">
-        <p className="story-text" >Once healthy and thriving, the world of Elektra has since turned desolate and barren.</p>
-        <p className="story-text" >On Elektra, music is energy. Music is the fuel, electricity, and light of the world.</p>
-        <p className="story-text" >Centuries ago, Elektra had a thriving civilization with a deep rooted sense of value towards art. But soon, motives around greed and self-interest took over, and the music that powered this world was lost.</p>
-        <p className="story-text" >Your mission is to travel to Elektra, and help us collectively revive, restore and reignite this once beautiful world back to health.</p>
-        <p className="story-text"><span style={{ fontStyle: "italic" }}>Will you accept your mission?</span></p>
+        <p className="story-text" >Songcamp Elektra is an 8-week songwriting and art creation camp made up of musicians, visual artists, developers and strategists. Together we have collectively created Elektra — an interactive story and world with music at its core.</p>
+        <p className="story-text" >In the world of Elektra, music is energy. Music is the fuel, electricity, and light of the world. Once healthy and thriving, Elektra has since turned desolate and barren. These 3 songs were created to help save this dying planet, and bring her back to health.</p>
+        <p className="story-text" >After the camp closes, the project will exit to its community and evolve into the Elektra DAO. The Elektra DAO will steward the continued development and distribution of the Elektra story, game and artwork. The Elektra DAO is scheduled to activate at the beginning of September 2021.</p>
+
+        {/* <p className="story-text"><span style={{ fontStyle: "italic" }}>Will you accept your mission?</span></p> */}
       </div>
       <div className="section video-section" >
         <video preload="yes" playsInline autoPlay loop muted className="video" >
@@ -60,8 +49,8 @@ function Portal() {
           </video>
         <div className="video-overlay">
           <div className='button-container'>
-            <a className='portal-button' href='https://opensea.io/assets/mirror-editions-v4?search[query]=ticket&search[sortAscending]=true&search[sortBy]=PRICE' target="_blank" rel="noreferrer">
-              GET YOUR PORTAL TICKET
+            <a className='portal-button' href='https://zora.co/songcamp' target="_blank" rel="noreferrer">
+              SEE THE ARTWORK
                     </a>
           </div>
           <div className='button-container'>

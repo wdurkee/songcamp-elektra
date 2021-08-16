@@ -99,6 +99,11 @@
     transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
 }
 
+.bar-3 {
+    height: 23px;
+    border-radius: 0;
+}
+
 .btn.pause .bar-1 {
     transform: translateX(13.5px) translateY(0px) rotate(0deg);
 }
@@ -115,6 +120,13 @@
     transform: translateX(20px) translateY(5px) rotate(-125deg);
 }
 
+.btn.pause .bar-3 {
+    transform: translateX(13.5px) translateY(0px) rotate(0deg);
+}
+
+.btn.play .bar-3 {
+    transform: translateX(12.6px) translateY(0px) rotate(0deg);
+}
 
 
 /* small screen nft collapse */
