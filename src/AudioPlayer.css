@@ -33,7 +33,8 @@
 .song-party-button {
     margin-top: 10px;
     font-size: calc(10px + 0.3vw);
-    min-width: 170px;
+    min-width: 175px;
+    height: 40px
 }
 
 
