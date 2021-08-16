@@ -3,7 +3,7 @@ export const track1 = {
     audioSrc: 'https://ipfs.fleek.co/ipfs/bafybeigmxqgsvmaken72wd54flbfcs2x4iele3tes2j2r2hm7oawuymfbu',
     imageSrc: 'https://i.imgur.com/KkI87jw.jpg',
     title: 'Outer Boroughs',
-    artist: 'Finch 3s',
+    artist: 'Finch-3S',
     artistUrl: 'http://beta.catalog.works/',
     catalogUrl: 'http://beta.catalog.works/',
     partyBidUrl: 'https://www.partybid.app/'
