@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ELEKTRA",
+  "name": "ELEKTRA SONGS AUCTION",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "https://i.imgur.com/Vujao3O.jpg",
+      "type": "image/jpg",
+      "sizes": "1200x600"
     }
   ],
   "start_url": ".",

@@ -1,0 +1,185 @@
+.nft-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 5vh 0px;
+}
+
+.nft-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center;
+    text-align: left;
+    height: 600px;
+    font-size: calc(11px + 0.4vw);
+    animation: fadeIn forwards 7s;
+    
+}
+
+.nft-visuals {
+    width: 275px;
+    height: 275px;
+    box-shadow: 0 1px 2px rgba(255,255,255,0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Scale up the box */
+.nft-visuals:hover {
+    transform: scale(1.02, 1.02);
+}
+  
+
+
+.zora-textSubdued {
+    font-size: 15px !important;
+}
+
+.zora-cardAuctionPricing {
+    grid-auto-flow: row !important;
+    padding: 5px 15px !important;
+}
+
+.zora-pricingAmount {
+    font-size: 15px !important;
+}
+
+.bid-button {
+    font-family: "IBM Plex Mono";
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 8px;
+    height: 42px;
+    width: 85px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nft-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+.btn-container {
+    position: relative;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: aliceblue 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: border 0.1s ease-in-out;
+}
+
+.btn:hover {
+    border: #333 2px solid;
+}
+
+.btn:hover .bar {
+    background-color: #333;
+}
+
+.btn .bar {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 2px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: aliceblue;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
+}
+
+.bar-3 {
+    height: 23px;
+    border-radius: 0;
+}
+
+.btn.pause .bar-1 {
+    transform: translateX(13.5px) translateY(0px) rotate(0deg);
+}
+
+.btn.pause .bar-2 {
+    transform: translateX(24px) translateY(0px) rotate(0deg);
+}
+
+.btn.play .bar-1 {
+    transform: translateX(20px) translateY(-5px) rotate(-55deg);
+}
+
+.btn.play .bar-2 {
+    transform: translateX(20px) translateY(5px) rotate(-125deg);
+}
+
+.btn.pause .bar-3 {
+    transform: translateX(13.5px) translateY(0px) rotate(0deg);
+}
+
+.btn.play .bar-3 {
+    transform: translateX(12.6px) translateY(0px) rotate(0deg);
+}
+
+
+.price-text {
+    font-size: calc(11px + 0.4vw);
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+
+}
+.nft-title-text {
+    font-size: calc(15px + 0.4vw);
+    font-weight: 900;
+    color: aliceblue;
+    text-decoration: none;
+}
+.nft-artist-text {
+    font-size: calc(12px + 0.4vw);
+    font-weight: 700;
+    color: #a7d1d6;
+    text-decoration: none;
+}
+
+.winning-address {
+    font-size: calc(10px + 0.2vw);
+    font-weight: 500;
+}
+
+/* small screen nft collapse */
+
+@media screen and (max-width: 900px) {
+    .nft-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nft-card {
+        margin-bottom: 75px;
+        height: 505px;
+    }
+}
