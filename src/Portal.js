@@ -22,16 +22,16 @@ function Portal() {
         <div className='button-container'>
           <a className='portal-button party-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
             Join the Party 🥳
-              </a>
+          </a>
         </div>
       </div>
 
       <div className="capsule-container">
-        <video preload="yes" playsInline autoPlay loop muted className="capsule-video" >
+        <video preload="yes" muted autoPlay playsInline loop className="capsule-video" >
           <source src="https://i.imgur.com/nPxtZm3.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className="story-content">
@@ -42,21 +42,21 @@ function Portal() {
         {/* <p className="story-text"><span style={{ fontStyle: "italic" }}>Will you accept your mission?</span></p> */}
       </div>
       <div className="section video-section" >
-        <video preload="yes" playsInline autoPlay loop muted className="video" >
+        <video preload="yes" muted autoPlay playsInline loop className="video" >
           <source src="https://i.imgur.com/98kiH3b.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
+          Your browser does not support the video tag.
+        </video>
         <div className="video-overlay">
           <div className='button-container'>
             <a className='portal-button' href='https://zora.co/songcamp' target="_blank" rel="noreferrer">
               SEE THE ARTWORK
-                    </a>
+            </a>
           </div>
           <div className='button-container'>
             <a className='portal-button' href='https://discord.gg/v6hj82yeaE' target="_blank" rel="noreferrer">
               ENTER THE PORTAL
-                    </a>
+            </a>
           </div>
           <MailChimpForm />
         </div>
@@ -75,9 +75,9 @@ function Portal() {
       </div>
       <div className="powerBottom">
         Powered by&nbsp;
-              <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/songcamp_" target="_blank" rel="noreferrer">
           Songcamp
-              </a>
+        </a>
       </div>
     </div >
   );

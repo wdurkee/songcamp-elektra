@@ -1,15 +1,22 @@
+// Hooks
 import { useState, useMemo, useRef } from 'react'
+import { useAuctionCountdown } from './gql/useAuctionCountdown'
 // import { NFTPreview, MediaConfiguration } from "@zoralabs/nft-components";
+
+// Components & styles
 import './Portal.css';
 import './AudioPlayer.css';
-import useSWR from 'swr'
-import { queryZoraSubgraph, GET_NFT_BY_ID } from './gql/services'
-import { getActiveAuction } from './gql/utils'
-import { useAuctionCountdown } from './gql/useAuctionCountdown'
-
 import AuctionInfo from './AuctionInfo'
 
-import { track1, track2, track3 } from './constants/tracks'
+// GQL
+import useSWR from 'swr'
+import { queryZoraSubgraph, GET_NFT_BY_ID } from './gql/services'
+
+// Utils
+import { getActiveAuction } from './gql/utils'
+
+// Constants
+import { track1, track2, track3 } from './constants/tracks' // metadata for each catalog record
 
 
 const nftFetcher = (query, zoraId) => queryZoraSubgraph(query, { zoraId })
@@ -28,17 +35,17 @@ const AudioPlayer = () => {
         [GET_NFT_BY_ID, track1.tokenId],
         nftFetcher,
         { refreshInterval: 7000 }
-    ) //4543 not kicked off nft
+    )
     const { data: zoraData2, error: fetchNftError2 } = useSWR(
         [GET_NFT_BY_ID, track2.tokenId],
         nftFetcher,
         { refreshInterval: 7000 }
-    ) //4543 not kicked off nft
+    )
     const { data: zoraData3, error: fetchNftError3 } = useSWR(
         [GET_NFT_BY_ID, track3.tokenId],
         nftFetcher,
         { refreshInterval: 7000 }
-    ) //4543 not kicked off nft
+    )
 
     const nft1 = useMemo(() => zoraData1?.media, [zoraData1])
     const nft2 = useMemo(() => zoraData2?.media, [zoraData2])
@@ -51,9 +58,6 @@ const AudioPlayer = () => {
     const playPauseIcon1 = useMemo(() => playing && currentTrack === track1 ? 'btn pause' : 'btn play', [currentTrack, playing, track1])
     const playPauseIcon2 = useMemo(() => playing && currentTrack === track2 ? 'btn pause' : 'btn play', [currentTrack, playing, track2])
     const playPauseIcon3 = useMemo(() => playing && currentTrack === track3 ? 'btn pause' : 'btn play', [currentTrack, playing, track3])
-
-    console.log({ playPauseIcon1, playPauseIcon2, playPauseIcon3 });
-    console.log({ playing });
 
     const pressPlay = (track) => {
         if (currentTrack === track) { // toggle play/pause on current track
@@ -71,6 +75,7 @@ const AudioPlayer = () => {
             setCurrentTrack(track)
             const newAudio = getAudioRef(track).current
             newAudio.play()
+            setPlaying(true)
         }
     }
 
@@ -94,8 +99,8 @@ const AudioPlayer = () => {
         <div className="nft-container">
             <div className="nft-card">
                 <img src={track1.imageSrc} alt="NFT img" className="nft-visuals" />
-                <p>{track1.title}</p>
-                <p>{track1.artist}</p>
+                <p className="nft-title-text">{track1.title}</p>
+                <p className="nft-artist-text">{track1.artist}</p>
                 {auction1 && <AuctionInfo auction={auction1} />}
 
                 <audio
@@ -128,8 +133,8 @@ const AudioPlayer = () => {
             </div>
             <div className="nft-card">
                 <img src={track2.imageSrc} alt="NFT img" className="nft-visuals" />
-                <p>{track2.title}</p>
-                <p>{track2.artist}</p>
+                <p className="nft-title-text">{track2.title}</p>
+                <p className="nft-artist-text">{track2.artist}</p>
                 {auction2 && <AuctionInfo auction={auction2} />}
 
                 <audio
@@ -156,8 +161,8 @@ const AudioPlayer = () => {
             </div>
             <div className="nft-card">
                 <img src={track3.imageSrc} alt="NFT img" className="nft-visuals" />
-                <p>{track3.title}</p>
-                <p>{track3.artist}</p>
+                <p className="nft-title-text">{track3.title}</p>
+                <p className="nft-artist-text">{track3.artist}</p>
                 {auction3 && <AuctionInfo auction={auction3} />}
 
                 <audio

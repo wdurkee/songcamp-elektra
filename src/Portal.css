@@ -27,6 +27,7 @@ body {
 .title-image {
   width: 40vw;
   min-width: 275px;
+  animation: fadeIn forwards 3s;
 }
 
 .elektra-logo {
@@ -89,6 +90,7 @@ body {
 
 .capsule-video {
   width: 100vw;
+  animation: fadeIn forwards 3s;
 }
 
 .story-content {
