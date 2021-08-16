@@ -272,10 +272,10 @@ body {
 
 @media screen and (max-width: 900px) {
   .bullet {
-    width: 40vw;
+    width: 50vw;
   }
   .story-text {
-      width: 65vw;
+      width: 75vw;
   }
 }
 
