@@ -164,9 +164,9 @@ const AudioPlayer = () => {
                         Party 🥳
                     </a> */}
                 </div>
-                {/* <a className='bid-button song-party-button button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
+                <a className='bid-button song-party-button button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
                     🥳AmeParty
-                </a> */}
+                </a>
             </div>
             <div className="nft-card">
                 <a href={track3.catalogUrl} target="_blank" rel="noreferrer" > <img src={track3.imageSrc} alt="NFT img" className="nft-visuals" /> </a>
@@ -198,9 +198,9 @@ const AudioPlayer = () => {
                         Party 🥳
                     </a> */}
                 </div>
-                {/* <a className='bid-button song-party-button button' href={track3.partyBidUrl} target="_blank" rel="noreferrer">
+                <a className='bid-button song-party-button button' href={track3.partyBidUrl} target="_blank" rel="noreferrer">
                     🥳WaterParty
-                </a> */}
+                </a>
             </div>
         </div >);
 

@@ -17,7 +17,7 @@ export const track2 = {
     artist: 'AME RA',
     artistUrl: 'https://zora.co/amera',
     catalogUrl: 'https://zora.co/amera/4556',
-    partyBidUrl: 'https://www.partybid.app/'
+    partyBidUrl: 'https://www.partybid.app/party/0x774793575231745674918AA96700486Ab8e74756'
 }
 
 export const track3 = {
@@ -28,5 +28,5 @@ export const track3 = {
     artist: 'Water Signs',
     artistUrl: 'https://zora.co/watersigns',
     catalogUrl: 'https://zora.co/watersigns/4555',
-    partyBidUrl: 'https://www.partybid.app/'
+    partyBidUrl: 'https://www.partybid.app/party/0x569Eb19845ccB4a536A46b601752000f42D71B96'
 }
