@@ -164,6 +164,7 @@
 
 .winner {
     color: #44eb4f;
+    font-weight: 700;
 }
 .nft-title-text {
     font-size: calc(15px + 0.4vw);
