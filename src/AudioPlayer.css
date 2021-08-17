@@ -12,7 +12,7 @@
     justify-content: space-evenly !important;
     align-items: center;
     text-align: left;
-    height: 625px;
+    height: 540px;
     font-size: calc(11px + 0.4vw);
     animation: fadeIn forwards 7s;
     
@@ -79,6 +79,10 @@
     margin-top: auto;
 }
 
+
+.party-button-small {
+    width: 40px;
+}
 
 .btn-container {
     position: relative;
@@ -186,6 +190,6 @@
 
     .nft-card {
         margin-bottom: 75px;
-        height: 550px;
+        height: 475px;
     }
 }

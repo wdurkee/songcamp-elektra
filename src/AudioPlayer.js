@@ -129,10 +129,11 @@ const AudioPlayer = () => {
                     <a className='bid-button button' href={track1.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
                     </a>
+                    <a className='bid-button party-button-small button' href={track1.partyBidUrl} target="_blank" rel="noreferrer">
+                        🥳
+                    </a>
                 </div>
-                <a className='bid-button song-party-button button' href={track1.partyBidUrl} target="_blank" rel="noreferrer">
-                    🥳FinchParty
-                </a>
+
             </div>
             <div className="nft-card">
                 <a href={track2.catalogUrl} target="_blank" rel="noreferrer"> <img src={track2.imageSrc} alt="NFT img" className="nft-visuals" /> </a>
@@ -160,13 +161,11 @@ const AudioPlayer = () => {
                     <a className='bid-button button' href={track2.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
                     </a>
-                    {/* <a className='bid-button button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
-                        Party 🥳
-                    </a> */}
+                    <a className='bid-button party-button-small button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
+                        🥳
+                    </a>
                 </div>
-                <a className='bid-button song-party-button button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
-                    🥳CrashCamp
-                </a>
+
             </div>
             <div className="nft-card">
                 <a href={track3.catalogUrl} target="_blank" rel="noreferrer" > <img src={track3.imageSrc} alt="NFT img" className="nft-visuals" /> </a>
@@ -194,13 +193,11 @@ const AudioPlayer = () => {
                     <a className='bid-button button' href={track3.catalogUrl} target="_blank" rel="noreferrer">
                         Place Bid
                     </a>
-                    {/* <a className='bid-button button' href={track3.partyBidUrl} target="_blank" rel="noreferrer">
-                        Party 🥳
-                    </a> */}
+                    <a className='bid-button party-button-small button' href={track3.partyBidUrl} target="_blank" rel="noreferrer">
+                        🥳
+                    </a>
                 </div>
-                <a className='bid-button song-party-button button' href={track3.partyBidUrl} target="_blank" rel="noreferrer">
-                    🥳WaterParty
-                </a>
+
             </div>
         </div >);
 
