@@ -59,7 +59,7 @@ const AuctionInfo = ({
                 </div>
             }
             {auctionIsOver
-                && <div className="price-text">
+                && <div className="price-text winner">
                     <p>
                         Winning Bid: {formatAmount(winningBidAmount)} ETH
                     </p>

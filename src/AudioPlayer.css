@@ -160,7 +160,10 @@
     text-align: center;
     width: 100%;
     font-weight: 500;
+}
 
+.winner {
+    color: #44eb4f;
 }
 .nft-title-text {
     font-size: calc(15px + 0.4vw);
