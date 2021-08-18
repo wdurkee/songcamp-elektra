@@ -37,7 +37,7 @@ const AuctionInfo = ({
     var winningBidAddress = "0x0"
     var winningBidAddressLink = "https://google.com"
     if (num === 1) {
-        winningBidAddress = "🥳FinchParty"
+        winningBidAddress = "FinchParty"
         winningBidAddressLink = "https://www.partybid.app/party/0xa93cbb8658578C09E7aDA3f9d989C2E1B2026342"
     }
     else if (num === 2) {
@@ -45,7 +45,7 @@ const AuctionInfo = ({
         winningBidAddressLink = "https://twitter.com/BeetsDAO"
     }
     else if (num === 3) {
-        winningBidAddress = "🥳CampWater"
+        winningBidAddress = "CampWater"
         winningBidAddressLink = "https://www.partybid.app/party/0x569Eb19845ccB4a536A46b601752000f42D71B96"
     }
 
