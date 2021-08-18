@@ -61,12 +61,12 @@ function Portal() {
             <a className='portal-button' href='https://zora.co/songcamp' target="_blank" rel="noreferrer">
               SEE THE ARTWORK
             </a>
-          </div>
+          </div> */}
           <div className='button-container'>
             <a className='portal-button' href='https://discord.gg/v6hj82yeaE' target="_blank" rel="noreferrer">
               ENTER THE PORTAL
             </a>
-          </div> */}
+          </div>
           <MailChimpForm />
         </div>
       </div>

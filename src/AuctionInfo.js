@@ -35,15 +35,20 @@ const AuctionInfo = ({
     //     [auction, finalBid]
     // )
     var winningBidAddress = "0x0"
+    var winningBidAddressLink = "https://google.com"
     if (num === 1) {
         winningBidAddress = "🥳FinchParty"
+        winningBidAddressLink = "https://www.partybid.app/party/0xa93cbb8658578C09E7aDA3f9d989C2E1B2026342"
     }
     else if (num === 2) {
         winningBidAddress = "BeetsDAO"
+        winningBidAddressLink = "https://twitter.com/BeetsDAO"
     }
     else if (num === 3) {
         winningBidAddress = "🥳CampWater"
+        winningBidAddressLink = "https://www.partybid.app/party/0x569Eb19845ccB4a536A46b601752000f42D71B96"
     }
+
 
 
 
@@ -64,9 +69,9 @@ const AuctionInfo = ({
                     <p>
                         Time Remaining: {countdown}
                     </p>
-                    <p className="winning-address">
+                    <a className="winning-address" href={winningBidAddressLink}>
                         {winningBidAddress}
-                    </p>
+                    </a>
                 </div>
             }
             {auctionIsOver
@@ -74,13 +79,13 @@ const AuctionInfo = ({
                     <p>
                         Winning Bid: {formatAmount(winningBidAmount)} ETH
                     </p>
-                    <p className="winning-address">
+                    <a className="winning-address" href={winningBidAddressLink} >
                         {winningBidAddress}
-                    </p>
+                    </a>
                 </div>
             }
 
-        </div>
+        </div >
     );
 }
 
