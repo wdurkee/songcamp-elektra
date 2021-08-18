@@ -36,13 +36,13 @@ const AuctionInfo = ({
     // )
     var winningBidAddress = "0x0"
     if (num === 1) {
-        winningBidAddress = "FinchParty"
+        winningBidAddress = "🥳FinchParty"
     }
     else if (num === 2) {
         winningBidAddress = "@beetsdaovault"
     }
     else if (num === 3) {
-        winningBidAddress = "CampWater"
+        winningBidAddress = "🥳CampWater"
     }
 
 
