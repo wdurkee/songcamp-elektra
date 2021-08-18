@@ -6,7 +6,7 @@ import { useAuctionCountdown } from './gql/useAuctionCountdown'
 import './AudioPlayer.css'
 
 const AuctionInfo = ({
-    auction
+    auction, num
 }) => {
     const {
         countdown,
@@ -27,13 +27,24 @@ const AuctionInfo = ({
         [auction, finalBid, auctionIsOver]
     )
 
-    const winningBidAddress = useMemo(() => {
-        if (auction.status === "Active" && auction.currentBid) return auction.currentBid.bidder.id
-        else if (auctionIsOver) return finalBid.bidder.id
-        else return null
-    },
-        [auction, finalBid]
-    )
+    // const winningBidAddress = useMemo(() => {
+    //     if (auction.status === "Active" && auction.currentBid) return auction.currentBid.bidder.id
+    //     else if (auctionIsOver) return finalBid.bidder.id
+    //     else return null
+    // },
+    //     [auction, finalBid]
+    // )
+    var winningBidAddress = "0x0"
+    if (num === 1) {
+        winningBidAddress = "FinchParty"
+    }
+    else if (num === 2) {
+        winningBidAddress = "@beetsdaovault"
+    }
+    else if (num === 3) {
+        winningBidAddress = "CampWater"
+    }
+
 
 
     return (
