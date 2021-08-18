@@ -69,7 +69,7 @@ const AuctionInfo = ({
                     <p>
                         Time Remaining: {countdown}
                     </p>
-                    <a className="winning-address" href={winningBidAddressLink}>
+                    <a className="winning-address" href={winningBidAddressLink} target="_blank" rel="noreferrer">
                         {winningBidAddress}
                     </a>
                 </div>
@@ -79,7 +79,7 @@ const AuctionInfo = ({
                     <p>
                         Winning Bid: {formatAmount(winningBidAmount)} ETH
                     </p>
-                    <a className="winning-address" href={winningBidAddressLink} >
+                    <a className="winning-address" href={winningBidAddressLink} target="_blank" rel="noreferrer">
                         {winningBidAddress}
                     </a>
                 </div>
