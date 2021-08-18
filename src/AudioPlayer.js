@@ -159,7 +159,7 @@ const AudioPlayer = () => {
                         </div>
                     </div>
                     <a className='bid-button button' href={track2.catalogUrl} target="_blank" rel="noreferrer">
-                        Place Bid
+                        View NFT
                     </a>
                     <a className='bid-button party-button-small button' href={track2.partyBidUrl} target="_blank" rel="noreferrer">
                         🥳
