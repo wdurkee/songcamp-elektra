@@ -30,7 +30,7 @@ const AudioPlayer = () => {
     const track2Ref = useRef(null)
     const track3Ref = useRef(null)
 
-    // *** FETCH NFT DATA *** 
+    // *** FETCH NFT DATA ***
     const { data: zoraData1, error: fetchNftError1 } = useSWR(
         [GET_NFT_BY_ID, track1.tokenId],
         nftFetcher,

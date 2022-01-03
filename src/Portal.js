@@ -28,7 +28,7 @@ function Portal() {
 
       <div className="capsule-container">
         <video preload="yes" muted autoPlay playsInline loop className="capsule-video" >
-          <source src="https://ipfs.fleek.co/ipfs/bafybeiconslactdsevjdtazm7urfzrlqy6nr4qiveqctjnhc35xanfkcki" type="video/mp4" />
+          <source src="https://storageapi.fleek.co/wdurkee-team-bucket/WEBSITECAPS%20(online-video-cutter.com).mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
           Your browser does not support the video tag.
         </video>
@@ -52,7 +52,7 @@ function Portal() {
       </div>
       <div className="section video-section" >
         <video preload="yes" muted autoPlay playsInline loop className="video" >
-          <source src="https://ipfs.fleek.co/ipfs/bafybeife4uysmajzrr334tbiyovatnj62rn3ke744rdqxb5c6gttnc3oly" type="video/mp4" />
+          <source src="https://storageapi.fleek.co/wdurkee-team-bucket/FORWEBSITELOOP.mp4" type="video/mp4" />
           {/* <source src="landscan.webm" type="video/webm" /> */}
           Your browser does not support the video tag.
         </video>
