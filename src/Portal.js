@@ -17,7 +17,7 @@ function Portal() {
         </Navbar.Brand>
       </Navbar>
       <div className="section auction" >
-        <h1 className="section-title">The Elektra Songs Auction</h1>
+        <h1 className="section-title">Songcamp Elektra</h1>
         <AudioPlayer />
         <div className='button-container'>
           <a className='portal-button party-button button' href='https://www.partybid.app/' target="_blank" rel="noreferrer">
@@ -33,7 +33,7 @@ function Portal() {
           Your browser does not support the video tag.
         </video>
       </div>
-
+      {/* 
       <div className="story-content">
         <p className="story-text welcome-text" >Welcome to the Elektra Songs Auction!</p>
         <p className="story-text">100% of the proceeds from these auctions will go to the artists who created these songs and artwork, as well as those who have contributed to the wider Elektra project.  <span>
@@ -48,8 +48,9 @@ function Portal() {
         </ul>
         <p className="story-text" >After the camp closes, the project will exit to its community and evolve into the Elektra DAO. The Elektra DAO will steward the continued development and distribution of the Elektra story, game and artwork. The Elektra DAO is scheduled to activate at the beginning of September 2021.</p>
 
-        {/* <p className="story-text"><span style={{ fontStyle: "italic" }}>Will you accept your mission?</span></p> */}
+        <p className="story-text"><span style={{ fontStyle: "italic" }}>Will you accept your mission?</span></p> 
       </div>
+       */}
       <div className="section video-section" >
         <video preload="yes" muted autoPlay playsInline loop className="video" >
           <source src="https://storageapi.fleek.co/wdurkee-team-bucket/FORWEBSITELOOP.mp4" type="video/mp4" />
